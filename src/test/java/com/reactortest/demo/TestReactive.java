@@ -60,9 +60,7 @@ public class TestReactive {
 
     @Test
     public void fluxTest() throws Exception {
-
         Flux<Person> people = Flux.just(michael, fiona, sam, jesse);
-
         people.subscribe(person -> log.info(person.sayMyName()));
 
     }
